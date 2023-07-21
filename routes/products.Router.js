@@ -61,12 +61,12 @@ productsRouter.get("/ALLProducts", async (req, res) => {
         "price",
         "type",
       ];
-      
+
       filter.$or = fieldsToMatch.map((field) => ({
         [field]: regexQ,
       }));
     }
-    console.log(filter);
+    // console.log(filter);
 
     const totalCount = await productModel.countDocuments(filter);
     const totalPages = Math.ceil(totalCount / limit);
@@ -77,7 +77,8 @@ productsRouter.get("/ALLProducts", async (req, res) => {
       .skip(skip)
       .limit(limit);
 
-    res.json({ data, totalPages });
+    // res.json({ data, totalPages });
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
@@ -142,7 +143,8 @@ productsRouter.get("/Popular_Combo_Deals", async (req, res) => {
       .skip(skip)
       .limit(limit);
 
-    res.json({ data, totalPages });
+    // res.json({ data, totalPages });
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
@@ -207,7 +209,8 @@ productsRouter.get("/Calcium_supplement", async (req, res) => {
       .skip(skip)
       .limit(limit);
 
-    res.json({ data, totalPages });
+    // res.json({ data, totalPages });
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
@@ -272,7 +275,8 @@ productsRouter.get("/Spotlight", async (req, res) => {
       .skip(skip)
       .limit(limit);
 
-    res.json({ data, totalPages });
+    // res.json({ data, totalPages });
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
@@ -337,7 +341,8 @@ productsRouter.get("/Treading", async (req, res) => {
       .skip(skip)
       .limit(limit);
 
-    res.json({ data, totalPages });
+    // res.json({ data, totalPages });
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
@@ -402,7 +407,8 @@ productsRouter.get("/Breakfast", async (req, res) => {
       .skip(skip)
       .limit(limit);
 
-    res.json({ data, totalPages });
+    // res.json({ data, totalPages });
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
@@ -467,7 +473,8 @@ productsRouter.get("/Bodymassagers", async (req, res) => {
       .skip(skip)
       .limit(limit);
 
-    res.json({ data, totalPages });
+    // res.json({ data, totalPages });
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
@@ -532,7 +539,8 @@ productsRouter.get("/FootHealth", async (req, res) => {
       .skip(skip)
       .limit(limit);
 
-    res.json({ data, totalPages });
+    // res.json({ data, totalPages });
+    res.json(data);
   } catch (error) {
     res.status(500).json({ error: "Failed to fetch products" });
   }
