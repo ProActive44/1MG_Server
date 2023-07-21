@@ -1,5 +1,5 @@
 {
-  "name": "specialized_server",
+  "name": "1MG_Server",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -20,11 +20,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ProActive44/Specialized_Server.git"
+    "url": "git+https://github.com/ProActive44/1MG_Server.git"
   },
   "bugs": {
-    "url": "https://github.com/ProActive44/Specialized_Server/issues"
+    "url": "https://github.com/ProActive44/1MG_Server/issues"
   },
-  "homepage": "https://github.com/ProActive44/Specialized_Server#readme",
+  "homepage": "https://github.com/ProActive44/1MG_Server#readme",
   "description": ""
 }
